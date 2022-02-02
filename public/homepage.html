@@ -1,0 +1,49 @@
+<h1> UPLOAD</h1>
+<form action = '/single' enctype="multipart/form-data" method="post" id="upload">
+    <input type="file"  id="File" name="filename"><br>
+    <input type="submit">
+    <!-- <script>
+
+const input = document.getElementById('File');
+
+// This will upload the file after having read it
+const upload = (file) => {
+  fetch('/single', { // Your POST endpoint
+    method: 'POST',
+    headers: {
+      // Content-Type may need to be completely **omitted**
+      // or you may need something
+    // "Content-Type": "multipart/form-data"
+    },
+    body: file // This is your file object
+}).then(
+    response => response.json() // if the response is a JSON object
+).then(
+    success => console.log(success) // Handle the success response object
+).catch(
+    error => console.log(error) // Handle the error response object
+);
+};
+
+// Event handler executed when a file is selected
+const onSelectFile = () => upload(input.files[0]);
+
+// Add a listener on your input
+// It will be triggered when a file will be selected
+input.addEventListener('change', onSelectFile, false);
+        // const form = document.getElementById('upload')
+        // form.addEventListener('submit', uploadFile)
+        
+        // async function uploadFile(event){
+        //     event.preventDefault()
+        //     const filename = document.getElementById('File').value;
+        //     console.log(filename);
+
+        //     const result = await fetch('/single', {
+        //         method: 'POST',   
+        //         body: filename
+        //     })
+        // }
+    </script> -->
+
+</form>

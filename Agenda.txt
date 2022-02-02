@@ -1,0 +1,27 @@
+Agenda - 
+
+Create APIs to Upload an excel File, read its contents & and insert it in MongoDB as well as upload it to user's google drive
+
+- Tasks Included :
+
+# Upload an excel file, handle it using Multer
+
+# Read the files contents & Store it in Database
+
+# Upload the excel file to User's Google Drive
+
+Extra:
+
+* Write the code in ES6 standards.
+
+* Use eslint in the code.
+
+* Use proper folder structures
+
+
+My Prespective - 
+
+# Use Multer.
+# Use OAuth.
+# Use Library to read the content of excel.
+# Use library to upload file to user's google drive.
