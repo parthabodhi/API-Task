@@ -32,17 +32,6 @@ const oauth2client = new google.auth.OAuth2(
 
 oauth2client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
-// const fileStorageEngine = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, './public/files');
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, `${Date.now()}--${file.originalname}`);
-//   },
-// });
-
-// const upload = multer({ storage: fileStorageEngine });
-
 const uploader = async (req, res, next) => {
   console.log(req.file.filename);
 
@@ -85,7 +74,6 @@ const uploader = async (req, res, next) => {
         Heel_Vol: result['HEEL VOLUME\n(m3 @ 15C)'],
         Heel_Weight: result['HEEL WEIGHT\n(kg)'],
       };
-      // console.log(vAssign);
       const update = await new data(vAssign).save();
     });
   }
